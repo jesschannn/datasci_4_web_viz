@@ -4,7 +4,7 @@ import pandas as pd
 
 # Load the dataset
 def load_data():
-    url = "https://raw.githubusercontent.com/jesschannn/datasci_4_web_viz/main/datasets/PLACES__Local_Data_for_Better_Health__County_Data_2023_release.csv"
+    url = "https://raw.githubusercontent.com/jesschannn/datasci_4_web_viz/main/dataset/PLACES__Local_Data_for_Better_Health__County_Data_2023_release.csv"
     return pd.read_csv(url)
 
 df = load_data()
