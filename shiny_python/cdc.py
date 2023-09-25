@@ -35,7 +35,7 @@ def server(input, output, session):
         selected_county_avg = df_sleep[df_sleep['LocationName'] == input.county()]['Data_Value'].mean()
 
         fig, ax = plt.subplots(figsize=(10, 6))
-        ax.bar(['Selected County', 'Overall Average'], [selected_county_avg, overall_avg], color=['lightcoral', 'dodgerblue'])
+        ax.bar(['Selected County', 'Overall Average'], [selected_county_avg, overall_avg], color=['lightpink', 'skyblue'])
         
         ax.set_ylabel('Data Value (Age-adjusted prevalence) - Percent')
         ax.set_ylim(0, 50)

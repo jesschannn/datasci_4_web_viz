@@ -30,7 +30,7 @@ def create_plot(county):
     selected_county_avg = df_sleep[df_sleep['LocationName'] == county]['Data_Value'].mean()
 
     fig, ax = plt.subplots(figsize=(10, 6))
-    ax.bar(['Selected County', 'Overall Average'], [selected_county_avg, overall_avg], color=['lightcoral', 'dodgerblue'])
+    ax.bar(['Selected County', 'Overall Average'], [selected_county_avg, overall_avg], color=['lightpink', 'skyblue'])
     ax.axhline(selected_county_avg, color='gray', linestyle='dashed', alpha=0.7)
     ax.set_ylabel('Data Value (Age-adjusted prevalence) - Percent')
     ax.set_ylim(0, 50)
